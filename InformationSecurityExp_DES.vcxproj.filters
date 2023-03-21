@@ -61,5 +61,8 @@
     <Text Include="ruleOfPositionChange.txt">
       <Filter>资源文件</Filter>
     </Text>
+    <Text Include="PC2.txt">
+      <Filter>资源文件</Filter>
+    </Text>
   </ItemGroup>
 </Project>

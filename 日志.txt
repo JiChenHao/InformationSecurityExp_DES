@@ -12,4 +12,4 @@ verse-1.0
 		*完成PC1按照顺序读取为map
 		*成功生成正确的C0和D0
 		*成功生成了16轮的Ck和Dk，存放在了map<int,map<int,int>>CDk中
-		TODO:ip置换器PC2
+		*ip置换器PC2完成，成功生成了16轮子密钥

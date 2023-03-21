@@ -146,6 +146,7 @@
     <Text Include="PlaintextNum2.txt" />
     <Text Include="SourceKeyNum2.txt" />
     <Text Include="ruleOfPositionChange.txt" />
+    <Text Include="PC2.txt" />
     <Text Include="日志.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

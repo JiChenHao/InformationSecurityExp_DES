@@ -110,33 +110,32 @@ public:
 
 
 	/*
-	位置变换器（IP置换）PC-1
+	位置变换器（IP置换）PC-2，生成16轮的子密钥并且存放在subK当中
 	*/
-	void changePosition1()
+	void changePosition2()
 	{
-
-		//读入置换选择规则PC1
-		map<int, int>pc1 = reader->getDataofnumInt("PC1.txt");
-		cout << "=====读入PC1成功=====" << endl;
-		cout << "=====开始生成C0和D0=====" << endl;
-		//按照PC1移位生成C0和D0
-		map<int, int>::iterator pc1It = pc1.begin();
-		for (; pc1It != pc1.end(); pc1It++)
+		//读入置换选择规则PC2
+		map<int, int>pc2 = reader->getDataofnumInt("PC2.txt");
+		
+		for (int lunS = 1; lunS <= 16; lunS++)
 		{
-			int count = pc1It->first;
-			int bitPosition = pc1It->second;
-			if (count <= 28)
+			cout << "=====读入PC2成功=====" << endl;
+			cout << "=====第" << lunS << "轮subK生成开始=====" << endl;
+			map<int, int> tempCDK = this->CDk[lunS];//取出当前轮数的Ck和Dk
+			map<int, int>subK;//临时存放一轮的子密钥
+			//按照PC2移位生成subK
+			map<int, int>::iterator pc2It = pc2.begin();
+			for (; pc2It != pc2.end(); pc2It++)
 			{
-				this->C0[count] = this->sourceKey[bitPosition];
-				cout << "C0--" << count << "--" << this->sourceKey[bitPosition] << endl;
+				int count = pc2It->first;
+				int bitPosition = pc2It->second;
+
+				subK[count] = tempCDK[bitPosition];
+				cout << "subK--" << count << "--" << subK[count] << endl;
 			}
-			else {
-				int countD0 = count - 28;
-				this->D0[countD0] = this->sourceKey[bitPosition];
-				cout << "D0--" << countD0 << "--" << this->sourceKey[bitPosition] << endl;
-			}
+			this->subKeys[lunS] = subK;
+			cout << "-----第" << lunS << "轮subK生成结束-----" << endl;
 		}
-		cout << "-----C0和D0生成结束-----" << endl;
 	}
 
 
@@ -149,6 +148,7 @@ public:
 		this->reader = new ReadData();
 		this->changePosition1();
 		this->changePositionOfSubKey("ruleOfPositionChange.txt");
+		this->changePosition2();
 		//generateSubKey();
 	}
 };
