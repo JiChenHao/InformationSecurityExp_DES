@@ -6,6 +6,7 @@
 #include "SubKeyGenerator.h"
 #include "ReadData.h"
 #include "Translate2To16.h"
+#include "dealPlaintext.h"
 using namespace std;
 int main()
 {

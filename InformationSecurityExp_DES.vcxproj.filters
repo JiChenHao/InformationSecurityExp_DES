@@ -35,6 +35,12 @@
     <ClInclude Include="ThisHead.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="DealPlaintext.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SBox.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="file.txt">
@@ -62,6 +68,36 @@
       <Filter>资源文件</Filter>
     </Text>
     <Text Include="PC2.txt">
+      <Filter>资源文件</Filter>
+    </Text>
+    <Text Include="IPChange.txt">
+      <Filter>资源文件</Filter>
+    </Text>
+    <Text Include="EExtension.txt">
+      <Filter>资源文件</Filter>
+    </Text>
+    <Text Include="SBox1.txt">
+      <Filter>资源文件</Filter>
+    </Text>
+    <Text Include="SBox2.txt">
+      <Filter>资源文件</Filter>
+    </Text>
+    <Text Include="SBox3.txt">
+      <Filter>资源文件</Filter>
+    </Text>
+    <Text Include="SBox4.txt">
+      <Filter>资源文件</Filter>
+    </Text>
+    <Text Include="SBox5.txt">
+      <Filter>资源文件</Filter>
+    </Text>
+    <Text Include="SBox6.txt">
+      <Filter>资源文件</Filter>
+    </Text>
+    <Text Include="SBox7.txt">
+      <Filter>资源文件</Filter>
+    </Text>
+    <Text Include="SBox8.txt">
       <Filter>资源文件</Filter>
     </Text>
   </ItemGroup>

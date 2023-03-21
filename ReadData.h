@@ -88,7 +88,7 @@ public:
 		for (; mit != charMap.end(); mit++)
 		{
 			string binStr = this->translateStringToNum2(mit->second);
-			cout << "原字母是：" << mit->second << " 二进制：" << binStr << endl;
+			//cout << "原字母是：" << mit->second << " 二进制：" << binStr << endl;
 			numVec.push_back(binStr);
 		}
 		cout << "-----字母转化结束-----" << endl;
@@ -98,16 +98,16 @@ public:
 		writer.open(fileNameNum2,ofstream::out);
 		vector<string>::iterator vit = numVec.begin();
 		string space = " ";
-		//cout << "====开始写入文件====" << endl;
+		//cout << "====开始写入二进制文件====" << endl;
 		for (; vit != numVec.end(); vit++)
 		{
 			writer << *vit<<space;
 			//cout << "写入：" << *vit << endl;
 		}
 		writer.close();
-		//cout << "----文件写入结束----" << endl;
+		//cout << "----二进制文件写入结束----" << endl;
 		//cout << "====获取2进制文件开始====" << endl;
-		map<int, int>re = this->getDataofnum2(fileNameNum2);
+		map<int, int>re = this->getDataofnum2(fileNameNum2);//从二进制文件中读取
 		//cout << "----获取2进制文件结束，返回结果----" << endl;
 		return re;
 	}

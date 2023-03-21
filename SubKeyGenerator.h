@@ -4,14 +4,14 @@
 #include "ReadData.h"
 class SubKeyGenerator
 {
-private:
+public:
 	map<int,int> sourceKey;		//原始密钥
 	map<int, int> C0, D0;		//原始密钥生成的原始子密钥
 	map<int,map<int, int>> CDk;	//存放16轮的中间Ck和Dk
 	map<int,map<int,int>> subKeys;	//存放子密钥
 	string sourceKey_PC1;	//经过pc1IP置换之后的密钥
 	ReadData *reader;		//执行文件操作的对象
-public:
+
 	/*
 	位置变换器（IP置换）PC-1
 	*/	
@@ -131,7 +131,7 @@ public:
 				int bitPosition = pc2It->second;
 
 				subK[count] = tempCDK[bitPosition];
-				cout << "subK--" << count << "--" << subK[count] << endl;
+				//cout << "subK--" << count << "--" << subK[count] << endl;
 			}
 			this->subKeys[lunS] = subK;
 			cout << "-----第" << lunS << "轮subK生成结束-----" << endl;

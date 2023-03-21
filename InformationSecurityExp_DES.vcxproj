@@ -133,20 +133,32 @@
     <ClCompile Include="FileOpenTest.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="DealPlaintext.h" />
     <ClInclude Include="ReadData.h" />
     <ClInclude Include="SubKeyGenerator.h" />
     <ClInclude Include="Translate2To16.h" />
     <ClInclude Include="ThisHead.h" />
+    <ClInclude Include="SBox.h" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="file.txt" />
     <Text Include="PC1.txt" />
+    <Text Include="SBox2.txt" />
+    <Text Include="SBox3.txt" />
+    <Text Include="SBox4.txt" />
+    <Text Include="SBox5.txt" />
+    <Text Include="SBox6.txt" />
+    <Text Include="SBox7.txt" />
+    <Text Include="SBox8.txt" />
     <Text Include="SourceKey.txt" />
     <Text Include="Plaintext.txt" />
     <Text Include="PlaintextNum2.txt" />
     <Text Include="SourceKeyNum2.txt" />
     <Text Include="ruleOfPositionChange.txt" />
     <Text Include="PC2.txt" />
+    <Text Include="IPChange.txt" />
+    <Text Include="EExtension.txt" />
+    <Text Include="SBox1.txt" />
     <Text Include="日志.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
