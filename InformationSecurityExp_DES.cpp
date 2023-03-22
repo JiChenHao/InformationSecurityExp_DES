@@ -7,6 +7,7 @@
 #include "ReadData.h"
 #include "Translate2To16.h"
 #include "dealPlaintext.h"
+#include "Show16.h"
 using namespace std;
 int main()
 {

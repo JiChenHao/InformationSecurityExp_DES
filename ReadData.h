@@ -84,14 +84,14 @@ public:
 		//以此将每个字母转化为二进制，有序的保存在vector中
 		vector<string> numVec;
 		map<int, string>::iterator mit = charMap.begin();
-		cout << "=====开始将字母转化为二进制=====" << endl;
+		//cout << "=====开始将字母转化为二进制=====" << endl;
 		for (; mit != charMap.end(); mit++)
 		{
 			string binStr = this->translateStringToNum2(mit->second);
 			//cout << "原字母是：" << mit->second << " 二进制：" << binStr << endl;
 			numVec.push_back(binStr);
 		}
-		cout << "-----字母转化结束-----" << endl;
+		//cout << "-----字母转化结束-----" << endl;
 		//写入目标文件
 		ofstream writer;
 		//写入文件之前先清空文件

@@ -41,6 +41,9 @@
     <ClInclude Include="SBox.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="Show16.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="file.txt">
@@ -98,6 +101,12 @@
       <Filter>资源文件</Filter>
     </Text>
     <Text Include="SBox8.txt">
+      <Filter>资源文件</Filter>
+    </Text>
+    <Text Include="PZhiHuan.txt">
+      <Filter>资源文件</Filter>
+    </Text>
+    <Text Include="IPNiZhiHuan.txt">
       <Filter>资源文件</Filter>
     </Text>
   </ItemGroup>

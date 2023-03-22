@@ -135,6 +135,7 @@
   <ItemGroup>
     <ClInclude Include="DealPlaintext.h" />
     <ClInclude Include="ReadData.h" />
+    <ClInclude Include="Show16.h" />
     <ClInclude Include="SubKeyGenerator.h" />
     <ClInclude Include="Translate2To16.h" />
     <ClInclude Include="ThisHead.h" />
@@ -142,7 +143,9 @@
   </ItemGroup>
   <ItemGroup>
     <Text Include="file.txt" />
+    <Text Include="IPNiZhiHuan.txt" />
     <Text Include="PC1.txt" />
+    <Text Include="PZhiHuan.txt" />
     <Text Include="SBox2.txt" />
     <Text Include="SBox3.txt" />
     <Text Include="SBox4.txt" />
